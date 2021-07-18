@@ -6,6 +6,10 @@ server:
 spring:
   application:
     name: discoveryservice
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      name: ecommerce
 
 # Eureka Lib 가 포함되어 있는경우 기본적으로 Eureka Client 로 동작한다.
 # 현재는 Eureka Server 이기 때문에 불필요하므로 비활성화 시킴 (기본은 true)
